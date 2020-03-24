@@ -6,17 +6,20 @@ The output format is of the form below:
 ```
 {
     "ghana": {
-        "cases": "16",
-        "date": "20th March, 2020",
-        "time": "17:05"
+        "existing": "50",
+        "confirmed": "52",
+        "recovered": "",
+        "deaths": "2",
+        "date": "24th March, 2020",
+        "time": "18:26"
     },
     "global": {
-        "existing": "157,510",
-        "confirmed": "255,305",
-        "recovered": "87,351",
-        "deaths": "10,444",
-        "date": "20th March, 2020",
-        "time": "17:10"
+        "existing": "285,081",
+        "confirmed": "410,465",
+        "recovered": "107,089",
+        "deaths": "18,295",
+        "date": "24th March, 2020",
+        "time": "18:26"
     }
 }
 ```
