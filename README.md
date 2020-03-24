@@ -20,3 +20,6 @@ The output format is of the form below:
     }
 }
 ```
+## Use case
+Timeline and statistics of Corona cases in Ghana
+[Ghana COVID data statistics:](http://noticeboard.mazitekgh.com/covid19gh/)
