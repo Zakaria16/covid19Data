@@ -3,6 +3,27 @@ Developers get a constantly updated data in JSON format on COVID-19 cases (inclu
 - version 1 [https://mazitekgh.com/covid19/v1/](https://mazitekgh.com/covid19/v1/)
 - version 2 [https://mazitekgh.com/covid19/v2/](https://mazitekgh.com/covid19/v2/)
 
+## How to use the source code
+To retrieve COVID19 cases for county Ghana.
+
+```php
+require_once 'Covid19Data.php';
+//create an instance
+$covid_data = new Covid19Data();
+
+$ghana_data = $covid_data->retrieve_covid_data_wiki('ghana');
+
+echo json_encode($ghana_data);
+```
+### methods
+`retrive_covid_data_wiki($loc)` scrape the data from [wikipedia](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic)
+
+`retrieve_covid_data_worldometers($loc)` scrape the data from [worldometer](https://www.worldometers.info/coronavirus/) 
+it seems they dont allow scrapping kindly read their terms and condition before you use theirs.
+
+See `example.php` for more info on how to use them.
+
+You can also use the  API's below to get the data
 ## version 2
 The version two provides statistics for many countries.
 endpoint: `GET` [https://mazitekgh.com/covid19/v2/](https://mazitekgh.com/covid19/v2?loc=country_name)
